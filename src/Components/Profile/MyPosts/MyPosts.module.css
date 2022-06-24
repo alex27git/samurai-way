@@ -1,0 +1,33 @@
+.header {
+    text-align: center;
+    font-size: 30px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.text {
+    display: block;
+    width: 80%;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn {
+    display: block;
+    background-color: rgba(9, 186, 235, 0.93);
+    color: white;
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(0, 174, 224);
+}

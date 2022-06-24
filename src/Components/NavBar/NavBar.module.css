@@ -1,0 +1,24 @@
+.sidebar {
+    grid-area: nav;
+    background-color: #13ce66;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+.menu {
+    list-style: none;
+    padding: 15px;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.item:last-child {
+    margin-top: 40px;
+}
+
+.active {
+    color: gold;
+}

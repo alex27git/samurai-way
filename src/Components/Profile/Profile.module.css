@@ -1,0 +1,54 @@
+.content {
+    position: relative;
+    grid-area: content;
+    border-radius: 10px ;
+
+}
+
+.promo {
+    background-color: #13ce66;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px 0 0 0;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    background-color: #e2e8ea;
+    border-radius: 10px 0 0 0;
+}
+
+.avatar {
+    max-width: 200px;
+
+}
+
+.avatarImg {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.dsc {
+    margin: 0 30px;
+}
+
+.name {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
