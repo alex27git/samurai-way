@@ -5,7 +5,7 @@
 }
 
 .logo {
-    width: 105px;
-    padding-left: 40px;
-    border-radius: 0 0 5px 10px;
+    width: 50px;
+    margin: 10px 40px;
+    border-radius: 50%;
 }

@@ -6,19 +6,19 @@ export function NavBar() {
     <nav className={classes.sidebar}>
       <ul className={classes.menu}>
         <li className={classes.item}>
-          <a className={`${classes.link} ${classes.active}`} href="src/Components/NavBar/NavBar#">Profile</a>
+          <a className={`${classes.link} ${classes.active}`} href="/Profile">Profile</a>
         </li>
         <li className={classes.item}>
-          <a className={classes.link} href="src/Components/NavBar/NavBar#">Massages</a>
+          <a className={classes.link} href="/Dialogs">Massages</a>
         </li>
         <li className={classes.item}>
-          <a className={classes.link} href="src/Components/NavBar/NavBar#">News</a>
+          <a className={classes.link} href="/News">News</a>
         </li>
         <li className={classes.item}>
-          <a className={classes.link} href="src/Components/NavBar/NavBar#">Music</a>
+          <a className={classes.link} href="/Music">Music</a>
         </li>
         <li className={classes.item}>
-          <a className={classes.link} href="src/Components/NavBar/NavBar#">Settings</a>
+          <a className={classes.link} href="/Settings">Settings</a>
         </li>
       </ul>
     </nav>
