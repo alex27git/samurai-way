@@ -1,0 +1,27 @@
+.dialogs {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 2fr  10fr;
+    color: black;
+}
+
+.dialogs_items {
+    border-right: 2px solid black;
+    height: 100%;
+
+
+}
+
+.dialog {
+    margin: 20px;
+    text-decoration: none;
+}
+
+
+.massages {
+    margin: 20px 30px;
+}
+
+.massage {
+    margin-bottom: 20px;
+}

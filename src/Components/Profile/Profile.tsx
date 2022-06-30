@@ -17,10 +17,10 @@ export function Profile() {
         </div>
         <div className={classes.dsc}>
           <p className={classes.name}>Alex G.</p>
-          <p className={classes.text}> Date of birth: 23 August</p>
-          <p className={classes.text}> City: Kursk</p>
-          <p className={classes.text}> Education: BSNRU`07</p>
-          <p className={classes.text}> Web Site:
+          <p className={classes.text}>Date of birth: 23 August</p>
+          <p className={classes.text}>City: Kursk</p>
+          <p className={classes.text}>Education: BSNRU`07</p>
+          <p className={classes.text}>Web Site:
             <a href="src/Components/Profile/Profile#" className={classes.link}>https://samurai.it-incubator.by</a>
           </p>
         </div>

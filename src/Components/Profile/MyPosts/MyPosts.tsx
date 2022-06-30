@@ -5,9 +5,9 @@ import classes from "./MyPosts.module.css";
 export function MyPosts() {
 
   const post1 = [
-    {id:1, post:"Hello"},
-    {id:2, post: "HTML/CSS" },
-    {id:3, post: "ReactJS"},
+    {id: 1, post: "Hello"},
+    {id: 2, post: "HTML/CSS"},
+    {id: 3, post: "ReactJS"},
   ]
 
   return (
