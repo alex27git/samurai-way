@@ -1,10 +1,7 @@
 import classes from "./../Dialogs.module.css";
+import {MassageType} from "../../../Redux/State";
 
-type MassagesType = {
-  massage: string
-}
-
-export const Massages = (props: MassagesType) => {
+export const Massages = (props: MassageType) => {
   return (
     <>
       <div className={classes.massage}>{props.massage}</div>

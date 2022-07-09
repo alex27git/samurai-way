@@ -1,9 +1,12 @@
 import React from "react";
 import classes from "./Profile.module.css";
-import {MyPosts} from "./MyPosts/MyPosts";
 import {UserProfile} from "./UserProfile/UserProfile";
+import {MyPosts} from "./MyPosts/MyPosts";
+import {ProfilePageType} from "../../Redux/State";
 
-export function Profile() {
+export function Profile(props: ProfilePageType) {
+
+
   return (
     <div className="app-wrapper-content">
       <div className={classes.promo}>
@@ -11,7 +14,7 @@ export function Profile() {
              alt="promo"/>
       </div>
       <UserProfile/>
-      <MyPosts/>
+      <MyPosts posts={props.posts}/>
     </div>
   )
 }

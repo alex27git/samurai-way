@@ -1,17 +1,12 @@
 import React from "react";
-import {Post} from "./Post/Post";
 import classes from "./MyPosts.module.css";
+import {Post} from "./Post/Post";
+import {ProfilePageType} from "../../../Redux/State";
 
 
-export function MyPosts() {
+export function MyPosts(props: ProfilePageType) {
 
-  const posts = [
-    {id: 1, post: 'Hello', likeCount: 15},
-    {id: 2, post: 'How are you', likeCount: 10},
-    {id: 3, post: 'react', likeCount: 12},
-    {id: 4, post: 'Hello', likeCount: 17},
-  ]
-  const postsItem = posts
+  const postsItem = props.posts
     .map(post => <Post id={post.id} post={post.post} likeCount={post.likeCount}/>)
 
   return (

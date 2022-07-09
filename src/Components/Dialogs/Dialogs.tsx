@@ -1,29 +1,15 @@
 import classes from "./Dialogs.module.css";
 import {DialogItem} from "./DialogItem/DialogItem";
 import {Massages} from "./Massages/Massages";
+import {DialogPageType} from "../../Redux/State";
 
-export function Dialogs() {
+export function Dialogs(props: DialogPageType) {
 
-  let dialogsData = [
-    {id: 1, name: "Dmitriy"},
-    {id: 2, name: "Alex"},
-    {id: 3, name: "Valera"},
-    {id: 4, name: "Sweta"},
-    {id: 5, name: "Victor"},
-  ]
-
-  let massagesData = [
-    {id: 1, massages: "Hi"},
-    {id: 2, massages: "How are you"},
-    {id: 3, massages: "Hello"},
-    {id: 4, massages: "YO"}
-  ]
-
-  let dialogsElements = dialogsData
+  let dialogsElements = props.dialogs
     .map(dialog => <DialogItem name={dialog.name} id={dialog.id}/>)
 
-  let massagesElement = massagesData
-    .map(massage => <Massages massage={massage.massages}/>)
+  let massagesElement = props.massages
+    .map(massage => <Massages massage={massage.massage} id={massage.id}/>)
 
   return (
     <div className={classes.dialogs}>
