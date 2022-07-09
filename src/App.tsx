@@ -8,6 +8,7 @@ import {BrowserRouter, Route} from "react-router-dom";
 import {News} from "./Components/News/News";
 import {Settings} from "./Components/Settings/Settings";
 import {Music} from "./Components/Music/Music";
+import {Footer} from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/news' component={News}/>
           <Route path='/music' component={Music}/>
           <Route path='/settings' component={Settings}/>
+          <Route path='/footer' component={Footer}/>
         </div>
       </div>
     </BrowserRouter>

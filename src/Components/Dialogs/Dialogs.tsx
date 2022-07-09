@@ -1,47 +1,37 @@
 import classes from "./Dialogs.module.css";
-import {NavLink} from "react-router-dom";
-
-type DialogItemType = {
-  name: string
-  id: string
-
-}
-
-const DialogItem = (props: DialogItemType) => {
-  return (
-    <div className={classes.dialog}>
-      <NavLink to={'dialogs/1' + '{props.id}'}>{props.name}</NavLink>
-    </div>
-  )
-}
-
-type MassagesType = {
-  massage: string
-}
-
-const Massages = (props: MassagesType) => {
-  return (
-    <>
-      <div className={classes.massage}>{props.massage}</div>
-    </>
-  )
-}
+import {DialogItem} from "./DialogItem/DialogItem";
+import {Massages} from "./Massages/Massages";
 
 export function Dialogs() {
+
+  let dialogsData = [
+    {id: 1, name: "Dmitriy"},
+    {id: 2, name: "Alex"},
+    {id: 3, name: "Valera"},
+    {id: 4, name: "Sweta"},
+    {id: 5, name: "Victor"},
+  ]
+
+  let massagesData = [
+    {id: 1, massages: "Hi"},
+    {id: 2, massages: "How are you"},
+    {id: 3, massages: "Hello"},
+    {id: 4, massages: "YO"}
+  ]
+
+  let dialogsElements = dialogsData
+    .map(dialog => <DialogItem name={dialog.name} id={dialog.id}/>)
+
+  let massagesElement = massagesData
+    .map(massage => <Massages massage={massage.massages}/>)
+
   return (
     <div className={classes.dialogs}>
       <div className={classes.dialogs_items}>
-        <DialogItem name={'Dmitriy'} id={'1'}/>
-        <DialogItem name={'Alex'} id={'2'}/>
-        <DialogItem name={'Valera'} id={'3'}/>
-        <DialogItem name={'Sweta'} id={'4'}/>
-        <DialogItem name={'Victor'} id={'5'}/>
+        {dialogsElements}
       </div>
       <div className={classes.massages}>
-        <Massages massage={'Hi'}/>
-        <Massages massage={'How are you'}/>
-        <Massages massage={'Hello'}/>
-
+        {massagesElement}
       </div>
     </div>
   )

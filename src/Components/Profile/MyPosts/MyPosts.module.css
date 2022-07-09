@@ -19,7 +19,7 @@
 
 .btn {
     display: block;
-    background-color: rgba(9, 186, 235, 0.93);
+    background-color: rgb(51, 153, 254);
     color: white;
     margin-left: 20px;
     padding: 5px 10px;
@@ -29,5 +29,6 @@
 }
 
 .btn:hover {
-    background-color: rgb(0, 174, 224);
+    background-color: rgba(51, 153, 254, 80%);
 }
+

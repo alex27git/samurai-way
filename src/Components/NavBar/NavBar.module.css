@@ -13,10 +13,11 @@
 .link {
     text-decoration: none;
     color: #ffffff;
+    text-transform: uppercase;
 }
 
 .item:last-child {
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 .active {

@@ -1,0 +1,13 @@
+.wrap {
+  grid-area: footer;
+  background-color: #13ce66;
+  align-items: center;
+}
+
+.right {
+  margin: 0 auto;
+}
+
+.allRight {
+  color: white;
+}
